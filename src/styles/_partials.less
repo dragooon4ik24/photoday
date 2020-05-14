@@ -1,0 +1,97 @@
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  bottom: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+  padding: 0 5px;
+  margin: 0 auto;
+
+  .tablet( {
+      padding: 0 20px;
+    }
+
+  );
+
+  .desktop( {
+      max-width: @breakpoint_desktop;
+      padding: 0 34px;
+    }
+
+  )
+}
+
+.except-mobile {
+  display: none;
+
+  .tablet( {
+      display: block;
+    }
+
+  );
+}
+
+.except-tablet {
+
+  .tablet( {
+      display: none;
+    }
+
+  );
+
+  .desktop( {
+      display: block;
+    }
+
+  );
+}
+
+.except-desktop {
+
+  .desktop( {
+      display: none;
+    }
+
+  );
+}
+
+.only-tablet {
+  display: none;
+
+  .tablet( {
+      display: block;
+    }
+
+  );
+
+  .desktop( {
+      display: none;
+    }
+
+  );
+}
+
+.only-mobile {
+  .tablet( {
+      display: none;
+    }
+
+  );
+}
+
+.only-desktop {
+  display: none;
+
+  .desktop( {
+      display: block;
+    }
+
+  );
+}

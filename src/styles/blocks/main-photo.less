@@ -1,0 +1,65 @@
+.main-photo {
+  position: relative;
+}
+
+.main-photo__caption {
+  display: none;
+
+  .desktop( {
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 13px;
+
+      font-family: 'NotoSans';
+      font-size: 13px;
+    }
+
+  );
+}
+
+.main-photo__title {
+  font-weight: bold;
+}
+
+.main-photo__source {
+  color: @color_gray-caption;
+}
+
+.main-photo__date {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+
+  width: 80px;
+  height: 53px;
+
+  background-color: white;
+  opacity: 0.8;
+
+  .tablet( {
+      top: 10px;
+      left: 10px;
+    }
+
+  );
+
+  .desktop( {
+      top: 20px;
+      left: 20px;
+
+      width: 160px;
+      height: 104px;
+    }
+
+  );
+}
+
+.main-photo__img {
+  margin-bottom: 5px;
+
+  .tablet( {
+      margin-bottom: 10px;
+    }
+
+  );
+}

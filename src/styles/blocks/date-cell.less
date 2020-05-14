@@ -1,0 +1,59 @@
+.date-cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.date-cell__day {
+  position: relative;
+
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+
+  .desktop( {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+  );
+
+  .album__list & {
+    &::before {
+      position: absolute;
+      content: '';
+      top: 9px;
+      right: -21px;
+
+      height: 5px;
+      width: 6px;
+
+      border: 3px solid black;
+      border-top-color: transparent;
+      border-bottom-color: transparent;
+      border-right-width: 0;
+
+      .desktop( {
+          top: 15px;
+          right: -44px;
+        }
+
+      );
+    }
+  }
+}
+
+.date-cell__month {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+
+  .desktop( {
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+  );
+}

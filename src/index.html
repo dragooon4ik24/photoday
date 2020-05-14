@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Photoday</title>
+</head>
+
+<body class="container">
+  <header class="header">
+    <h1 class="header__title">
+      <span class="header__title-wrapper">День в фото</span>
+    </h1>
+  </header>
+  <main>
+    <section class="album">
+      <figure class="main-photo">
+        <div class="main-photo__date date-cell">
+          <p class="date-cell__day">21</p>
+          <p class="date-cell__month">сентября</p>
+        </div>
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/img/yacht-desktop.jpg" />
+          <source media="(min-width: 480px)" srcset="./assets/img/yacht-tablet.jpg" />
+          <img class="main-photo__img" src="./assets/img/yacht-mobile.jpg" alt="Яхта" />
+        </picture>
+        <figcaption class="main-photo__caption">
+          <p class="main-photo__title">Мельницы маленькой деревушки Brandmill вблизи курортного австрийского города
+            Mayerhoffen.</p>
+          <p class="main-photo__source">Фото: Reuters</p>
+        </figcaption>
+      </figure>
+
+      <ul class="album__list">
+        <li class="album__photo except-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/glaciers-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/glaciers-tablet.jpg" />
+            <img src="./assets/img/glaciers-mobile.jpg" alt="Ледники" />
+          </picture>
+        </li>
+        <li class="album__photo except-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/welding-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/welding-tablet.jpg" />
+            <img src="./assets/img/welding-mobile.jpg" alt="Сварка" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/study-desktop.jpg" />
+            <img src="./assets/img/study-tablet.jpg" alt="Сварка" />
+          </picture>
+        </li>
+        <li class="album__photo album__photo--adidas except-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/adidas-desktop.jpg" />
+            <img src="./assets/img/adidas-tablet.jpg" alt="Адидас" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/stripes-desktop.jpg" />
+            <img src="./assets/img/stripes-tablet.jpg" alt="Сварка" />
+          </picture>
+        </li>
+        <li class="album__photo except-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/dance-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/dance-tablet.jpg" />
+            <img src="./assets/img/dance-mobile.jpg" alt="Танец" />
+          </picture>
+        </li>
+
+        <li class="album__photo">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/room-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/room-tablet.jpg" />
+            <img src="./assets/img/room-mobile.jpg" alt="Аппартаменты" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/glaciers-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/glaciers-tablet.jpg" />
+            <img src="./assets/img/glaciers-mobile.jpg" alt="Ледники" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/welding-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/welding-tablet.jpg" />
+            <img src="./assets/img/welding-mobile.jpg" alt="Сварка" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/bar-desktop.jpg" />
+            <img src="./assets/img/bar-tablet.jpg" alt="Бар" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/pipes-desktop.jpg" />
+            <img src="./assets/img/pipes-tablet.jpg" alt="Трубопровод" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/builders-desktop.jpg" />
+            <img src="./assets/img/builders-tablet.jpg" alt="Строители" />
+          </picture>
+        </li>
+        <li class="album__ad-teaser ad-teaser">
+          <img class="ad-teaser__img" src="./assets/img/theatre-ads.png" alt="Театральная паутина" class="ad-teaser">
+          <div class="ad-teaser__wrapper">
+            <p class="ad-teaser__text">Рекламный тизер</p>
+            <h3 class="ad-teaser__title">Театральная паутина</h3>
+            <p class="ad-teaser__description">Открытие новых сервисных центров немецкого автопрома</p>
+          </div>
+        </li>
+
+        <!-- 20 сентября-->
+        <li>
+          <div class="date-cell">
+            <p class="date-cell__day">20</p>
+            <p class="date-cell__month">сентября</p>
+          </div>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/builders-desktop.jpg" />
+            <img src="./assets/img/builders-tablet.jpg" alt="Строители" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <img src="./assets/img/staff-tablet.jpg" alt="Инструменты" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/beach-desktop.jpg" />
+            <img src="./assets/img/beach-tablet.jpg" alt="Пляж" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/oil-desktop.jpg" />
+            <img src="./assets/img/oil-tablet.jpg" alt="Нефть" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/pipes-desktop.jpg" />
+            <img src="./assets/img/pipes-tablet.jpg" alt="Трубопровод" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/firemachine-desktop.jpg" />
+            <img src="./assets/img/firemachine-tablet.jpg" alt="Пожарная машина" />
+          </picture>
+        </li>
+        <li class="album__photo except-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/rain-desktop.jpg" />
+            <img src="./assets/img/rain-tablet.jpg" alt="Дождь" />
+          </picture>
+        </li>
+        <li class="album__photo except-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/welding-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/welding-tablet.jpg" />
+            <img src="./assets/img/welding-mobile.jpg" alt="Сварка" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/picture-desktop.jpg" />
+            <img src="./assets/img/picture-tablet.jpg" alt="Картина" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/operator-desktop.jpg" />
+            <img src="./assets/img/operator-tablet.jpg" alt="Оператор" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/dance-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/dance-tablet.jpg" />
+            <img src="./assets/img/dance-mobile.jpg" alt="Танец" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/room-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/room-tablet.jpg" />
+            <img src="./assets/img/room-mobile.jpg" alt="Аппартаменты" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/glaciers-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/glaciers-tablet.jpg" />
+            <img src="./assets/img/glaciers-mobile.jpg" alt="Ледники" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/welding-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/welding-tablet.jpg" />
+            <img src="./assets/img/welding-mobile.jpg" alt="Сварка" />
+          </picture>
+        </li>
+
+        <!-- 19 сентября-->
+        <li>
+          <div class="date-cell">
+            <p class="date-cell__day">19</p>
+            <p class="date-cell__month">сентября</p>
+          </div>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/room-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/room-tablet.jpg" />
+            <img src="./assets/img/room-mobile.jpg" alt="Аппартаменты" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/room-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/room-tablet.jpg" />
+            <img src="./assets/img/room-mobile.jpg" alt="Аппартаменты" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/welding-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/welding-tablet.jpg" />
+            <img src="./assets/img/welding-mobile.jpg" alt="Сварка" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/dance-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/dance-tablet.jpg" />
+            <img src="./assets/img/dance-mobile.jpg" alt="Танец" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/room-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/room-tablet.jpg" />
+            <img src="./assets/img/room-mobile.jpg" alt="Аппартаменты" />
+          </picture>
+        </li>
+        <li class="album__photo only-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/glaciers-desktop.jpg" />
+            <source media="(min-width: 480px)" srcset="./assets/img/glaciers-tablet.jpg" />
+            <img src="./assets/img/glaciers-mobile.jpg" alt="Ледники" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/operator-desktop.jpg" />
+            <img src="./assets/img/operator-tablet.jpg" alt="Оператор" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/firemachine-desktop.jpg" />
+            <img src="./assets/img/firemachine-tablet.jpg" alt="Пожарная машина" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/bar-desktop.jpg" />
+            <img src="./assets/img/bar-tablet.jpg" alt="Бар" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/picture-desktop.jpg" />
+            <img src="./assets/img/picture-tablet.jpg" alt="Картина" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/oil-desktop.jpg" />
+            <img src="./assets/img/oil-tablet.jpg" alt="Нефть" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/beach-desktop.jpg" />
+            <img src="./assets/img/beach-tablet.jpg" alt="Пляж" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/business-desktop.jpg" />
+            <img src="./assets/img/business-tablet.jpg" alt="Бизнес" />
+          </picture>
+        </li>
+        <li class="album__photo except-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/glaciers2-desktop.jpg" />
+            <img src="./assets/img/glaciers2-tablet.jpg" alt="Ледник" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/business-desktop.jpg" />
+            <img src="./assets/img/business-tablet.jpg" alt="Бизнес" />
+          </picture>
+        </li>
+
+        <!-- 18 сентября-->
+        <li class="except-mobile">
+          <div class="date-cell">
+            <p class="date-cell__day">18</p>
+            <p class="date-cell__month">сентября</p>
+          </div>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/road-desktop.jpg" />
+            <img src="./assets/img/road-tablet.jpg" alt="Дорога" />
+          </picture>
+        </li>
+        <li class="album__photo only-tablet">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/winter-desktop.jpg" />
+            <img src="./assets/img/winter-tablet.jpg" alt="Зима" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <img src="./assets/img/dance-desktop.jpg" alt="Танец" />
+          </picture>
+        </li>
+        <li class="album__photo album__photo--cola only-desktop">
+          <picture>
+            <img src="./assets/img/cola-desktop.jpg" alt="Кола" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <img src="./assets/img/stripes-desktop.jpg" alt="Полосы" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <img src="./assets/img/study-desktop.jpg" alt="Учеба" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <img src="./assets/img/glaciers-desktop.jpg" alt="Ледники" />
+          </picture>
+        </li>
+        <li class="album__photo except-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/cinema-desktop.jpg" />
+            <img src="./assets/img/cinema-tablet.jpg" alt="Кино" />
+          </picture>
+        </li>
+
+        <!-- 17 сентября-->
+        <li class="except-mobile">
+          <div class="date-cell">
+            <p class="date-cell__day">17</p>
+            <p class="date-cell__month">сентября</p>
+          </div>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <img src="./assets/img/winter-desktop.jpg" alt="Зима" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <img src="./assets/img/road-desktop.jpg" alt="Дорога" />
+          </picture>
+        </li>
+        <li class="album__photo only-desktop">
+          <picture>
+            <img src="./assets/img/station-desktop.jpg" alt="Станция" />
+          </picture>
+        </li>
+        <li class="album__photo except-mobile">
+          <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/airport-desktop.jpg" />
+            <img src="./assets/img/airport-tablet.jpg" alt="Аэропорт" />
+          </picture>
+        </li>
+      </ul>
+      <div class="album__pagination pagination">
+        <p class="pagination__pages">Страницы:</p>
+        <ul class="pagination__list">
+          <li class="pagination__item pagination__item--active">
+            <a href="#">1</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#">2</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#">3</a>
+          </li>
+          <li class="pagination__item">
+            <a href="#">4</a>
+          </li>
+        </ul>
+        <a href="#"" class=" pagination__next">Следующая</a>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

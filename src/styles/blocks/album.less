@@ -1,0 +1,57 @@
+.album__list {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+  row-gap: 5px;
+  margin-bottom: 20px;
+
+  .tablet( {
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+      column-gap: 10px;
+      row-gap: 10px;
+      margin-bottom: 30px;
+    }
+
+  );
+
+  .desktop( {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+
+  );
+}
+
+.album__photo {
+  &--adidas {
+    margin-left: 10px;
+    grid-column-start: 4;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 5;
+
+    .desktop( {
+        margin-left: 0;
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+      }
+
+    );
+  }
+
+  &--cola {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+}
+
+.album__ad-teaser {
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
